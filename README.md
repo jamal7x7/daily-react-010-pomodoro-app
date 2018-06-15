@@ -8,7 +8,7 @@ My submission: https://github.com/jamal7x7/daily-react-009-basic-calculator-app
 
 status:
 -> UI/UX design <-
-CSS
-Coding
-refinement
-finished
+/ CSS
+/ Coding
+/ refinement
+/ finished
