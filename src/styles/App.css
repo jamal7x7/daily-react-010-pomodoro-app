@@ -1,15 +1,61 @@
-.App {
-  text-align: center;
+body {
+  background: #041A3E;
+  font-family: "open sans", "Lato", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #EEE;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-title {
   font-size: 1.5em;
+  text-align: center;
+}
+
+.pomodoro {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #041A3E;
+  box-shadow: 0 70px 100px -70px black, 0 50px 70px 10px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 60px 150px 250px 220px 50px;
+  grid-template-areas: ' audio . .  ' ' . duration .  ' ' . timer . '  ' . play . ' ' progression progression progression ';
+}
+
+.pomodoro .audio {
+  grid-area: audio;
+  justify-self: center;
+  align-self: center;
+}
+
+.pomodoro .duration {
+  grid-area: duration;
+  justify-self: center;
+  align-self: center;
+}
+
+.pomodoro .timer {
+  grid-area: timer;
+  justify-self: center;
+  align-self: center;
+}
+
+.pomodoro .play {
+  grid-area: play;
+  justify-self: center;
+  align-self: center;
+}
+
+.pomodoro .progression {
+  grid-area: progression;
+  justify-self: center;
+  align-self: center;
 }
 /*# sourceMappingURL=App.css.map */

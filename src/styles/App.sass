@@ -1,14 +1,72 @@
-.App 
-  text-align: center;
+$bg: #1D1C23
+$bgm: #062659
+$bgd: #041A3E
+$main: #EEE
+$purplish: #DB8EDA
+$blued: #073175
+$bluew: #5E85C3
 
+$grad:  linear-gradient(225deg, #DD8EDA -11%, #42A3F9 100%)
+
+$xxl: 58px
+$xl: 34px
+$l: 22px
+$m: 16px
+$s: 14px
+$xs: 11px
+
+
+$main-font: 'open sans', 'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+body 
+  background: $bgd
+  font-family: $main-font
+  color: $main
+  
+ 
 
 .App-header 
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  height: 100px
+  padding: 20px
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+
 
 
 .App-title 
-  font-size: 1.5em;
+  font-size: 1.5em
+  text-align: center
 
+.pomodoro
+  width: 600px
+  // height: 730px
+  margin: 0 auto
+  background-color: $bgd
+  box-shadow: 0 70px 100px -70px black , 0 50px 70px 10px rgba(black, 0.2)
+  display: grid
+  grid-template-columns: 50px 1fr 50px
+  grid-template-rows: 60px 150px 250px 220px 50px
+  grid-template-areas:  ' audio . .  ' ' . duration .  ' ' . timer . '  ' . play . ' ' progression progression progression '
+
+  .audio 
+    grid-area: audio
+    justify-self: center
+    align-self: center
+  .duration 
+    grid-area: duration
+    justify-self: center
+    align-self: center
+  .timer
+    grid-area: timer
+    justify-self: center
+    align-self: center
+  .play 
+    grid-area: play
+    justify-self: center
+    align-self: center
+  .progression 
+    grid-area: progression
+    justify-self: center
+    align-self: center
